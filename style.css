@@ -52,13 +52,12 @@ body {
 .card-back {
     display: flex;
     background: url(./images/2.png);
-    color: rgb(255, 255, 255);
 }
 
 .card-back-left {
     width: 65%;
 
-    color: rgb(255, 255, 255);
+    color: white;
     padding: 30px 25px;
     display: flex;
     flex-direction: column;
@@ -79,7 +78,7 @@ body {
 
 .position {
     font-size: 14px;
-    color: rgba(0, 0, 0, 0.8);
+    color: rgba(255, 255, 255, 0.8);
     margin-top: 5px;
 }
 
@@ -153,6 +152,7 @@ body {
 /* 액션 버튼 */
 .action-buttons {
     display: flex;
+    flex-direction: column;
     gap: 10px;
     width: 100%;
     margin-top: 10px;
@@ -174,13 +174,8 @@ body {
 }
 
 .btn-save {
-    background: #2c3e50;
+    background: #000000;
     color: white;
-}
-
-.btn-share {
-    background: #f5e6d3;
-    color: #2c3e50;
 }
 
 @media (max-width: 480px) {
@@ -191,26 +186,20 @@ body {
 
 /* 공유 모달 */
 .share-modal {
-    display: none;
-    position: fixed;
-    top: 0;
-    left: 0;
     width: 100%;
     height: 100%;
-    background: rgba(0, 0, 0, 0.5);
     justify-content: center;
     align-items: center;
     z-index: 1000;
 }
 
 .share-modal-content {
-    background: white;
-    border-radius: 12px;
-    width: 90%;
-    max-width: 400px;
+    max-width: 450px;
     overflow: hidden;
 }
-
+.content img {
+    width: 100%;
+}
 .share-modal-header {
     display: flex;
     justify-content: space-between;
@@ -239,9 +228,8 @@ body {
 
 .share-options {
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(4, 1fr);
     gap: 15px;
-    padding: 20px;
 }
 
 .share-option {
@@ -249,10 +237,9 @@ body {
     flex-direction: column;
     align-items: center;
     gap: 10px;
-    padding: 20px 10px;
+    padding: 10px;
     border: 1px solid #e0e0e0;
     border-radius: 8px;
-    background: white;
     cursor: pointer;
     font-family: "Segoe UI", "Noto Sans KR", sans-serif;
     font-size: 14px;
@@ -260,8 +247,8 @@ body {
 }
 
 .share-icon {
-    width: 50px;
-    height: 50px;
+    width: 40px;
+    height: 40px;
     border-radius: 50%;
     display: flex;
     align-items: center;
@@ -339,9 +326,21 @@ body {
     margin-top: 20px;
     font-size: 0.9rem;
 }
+.content-text {
+    text-align: center;
+}
+.content-text a {
+    padding: 10px;
+    background-color: #238110;
+    color: white;
+    display: block;
+    width: fit-content;
+    margin: 10px auto;
+    border-radius: 5px;
+}
 @media (max-width: 480px) {
     .share-options {
-        grid-template-columns: repeat(2, 1fr);
+        grid-template-columns: repeat(4, 1fr);
     }
     .qr-code-wrapper img {
         width: 100%;
@@ -349,6 +348,65 @@ body {
 }
 @media (max-width: 680px) {
     .share-options {
-        grid-template-columns: repeat(2, 1fr);
+        grid-template-columns: repeat(4, 1fr);
+    }
+}
+
+/* 언어 선택 영역 */
+.language-selector {
+    position: fixed;
+    bottom: 10px;
+    z-index: 99999999;
+    width: 100%;
+    max-width: 450px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    background: rgba(255, 255, 255, 0.089);
+    border-radius: 8px;
+    margin-top: 20px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.lang-btn {
+    background: none;
+    border: 2px solid transparent;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.lang-btn:hover {
+    transform: scale(1.1);
+    border-color: #0f3f05;
+}
+
+.lang-btn.active {
+    border-color: #0f3f05;
+    background: rgba(15, 63, 5, 0.1);
+}
+
+.lang-btn .fi {
+    width: 45px;
+    height: 45px;
+    display: block;
+    border-radius: 50%;
+    overflow: hidden;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+}
+
+@media (max-width: 480px) {
+    .language-selector {
+        gap: 8px;
+        padding: 15px;
+    }
+
+    .lang-btn .fi {
+        width: 25px;
+        height: 25px;
     }
 }
