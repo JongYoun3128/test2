@@ -1,0 +1,353 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta
+            property="og:title"
+            content="Bizup & 포인트그라운드  스마트명함"
+        />
+        <meta property="og:type" content="website" />
+        <meta
+            property="og:image"
+            content="https://jongyoun3128.github.io/bizup-gangjuhyun-/images/url2.png"
+        />
+        <meta
+            property="og:description"
+            content="디지털 전자명함 - 스마트한 비즈니스 네트워킹"
+        />
+        <meta property="og:url" content="http://pointground.co.kr/" />
+        <title>전자명함</title>
+        <link rel="stylesheet" href="style.css" />
+        <link rel="stylesheet" href="styles2.css" />
+    </head>
+    <body>
+        <div class="card-container">
+            <!-- 앞면 -->
+            <div class="card card-front"></div>
+
+            <!-- 뒷면 -->
+            <div class="card card-back">
+                <div class="card-back-left">
+                    <div class="name-section">
+                        <div class="position">Chief Director</div>
+                        <div class="name-ko">강 주 현</div>
+                    </div>
+                    <div class="info-section">
+                        <div class="info-item">
+                            <svg
+                                class="info-icon"
+                                viewBox="0 0 24 24"
+                                fill="none"
+                                xmlns="http://www.w3.org/2000/svg"
+                            >
+                                <path
+                                    d="M20 10.999h2C22 5.869 18.127 2 12.99 2v2C17.052 4 20 6.943 20 10.999z"
+                                    fill="white"
+                                />
+                                <path
+                                    d="M13 8c2.103 0 3 .897 3 3h2c0-3.225-1.775-5-5-5v2zm3.422 5.443a1.001 1.001 0 00-1.391.043l-2.393 2.461c-.576-.11-1.734-.471-2.926-1.66-1.192-1.193-1.553-2.354-1.66-2.926l2.459-2.394a1 1 0 00.043-1.391L6.859 3.513a1 1 0 00-1.391-.087l-2.17 1.861a1 1 0 00-.29.649c-.015.25-.301 6.172 4.291 10.766C11.305 20.707 16.323 21 17.705 21c.202 0 .326-.006.359-.008a.992.992 0 00.648-.291l1.86-2.171a1 1 0 00-.086-1.391l-4.064-3.696z"
+                                    fill="white"
+                                />
+                            </svg>
+                            <span class="info-text">010-9806-3433</span>
+                        </div>
+                        <div class="info-item">
+                            <svg
+                                class="info-icon"
+                                viewBox="0 0 24 24"
+                                fill="none"
+                                xmlns="http://www.w3.org/2000/svg"
+                            >
+                                <path
+                                    d="M20 4H4c-1.103 0-2 .897-2 2v12c0 1.103.897 2 2 2h16c1.103 0 2-.897 2-2V6c0-1.103-.897-2-2-2zm0 2v.511l-8 6.223-8-6.222V6h16zM4 18V9.044l7.386 5.745a.994.994 0 001.228 0L20 9.044 20.002 18H4z"
+                                    fill="white"
+                                />
+                            </svg>
+                            <span class="info-text"
+                                >officecine01@gmail.com</span
+                            >
+                        </div>
+                        <div class="info-item">
+                            <svg
+                                class="info-icon"
+                                viewBox="0 0 24 24"
+                                fill="none"
+                                xmlns="http://www.w3.org/2000/svg"
+                            >
+                                <path
+                                    d="M12 2C7.589 2 4 5.589 4 9.995c0 6.167 7.084 11.259 7.387 11.479a1 1 0 001.226 0C12.916 21.254 20 16.162 20 9.995 20 5.589 16.411 2 12 2zm0 14a4 4 0 110-8 4 4 0 010 8z"
+                                    fill="white"
+                                />
+                                <circle cx="12" cy="12" r="2" fill="white" />
+                            </svg>
+                            <span class="info-text"
+                                >금천구 가산동 벚꽃로 286<br />삼성리더스타워
+                                1101호</span
+                            >
+                        </div>
+                    </div>
+                </div>
+                <div class="card-back-right">
+                    <div class="tagline">Business & Consulting</div>
+                    <div class="logo-small2">
+                        <a
+                            target="_blank"
+                            href="https://jongyoun3128.github.io/bizup-gangjuhyun-/"
+                            ><img src="images/qr.png" alt="QR Code"
+                        /></a>
+                    </div>
+                </div>
+            </div>
+            <!-- 액션 버튼 -->
+            <div class="action-buttons">
+                <button onclick="saveContact()" class="btn btn-save">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none">
+                        <path
+                            d="M19 21H5a2 2 0 01-2-2V5a2 2 0 012-2h11l5 5v11a2 2 0 01-2 2z"
+                            stroke="currentColor"
+                            stroke-width="2"
+                        />
+                        <path
+                            d="M17 21v-8H7v8M7 3v5h8"
+                            stroke="currentColor"
+                            stroke-width="2"
+                        />
+                    </svg>
+                    연락처 저장
+                </button>
+                <button onclick="shareCard()" class="btn btn-share">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none">
+                        <circle
+                            cx="18"
+                            cy="5"
+                            r="3"
+                            stroke="currentColor"
+                            stroke-width="2"
+                        />
+                        <circle
+                            cx="6"
+                            cy="12"
+                            r="3"
+                            stroke="currentColor"
+                            stroke-width="2"
+                        />
+                        <circle
+                            cx="18"
+                            cy="19"
+                            r="3"
+                            stroke="currentColor"
+                            stroke-width="2"
+                        />
+                        <path
+                            d="M8.59 13.51l6.83 3.98M15.41 6.51l-6.82 3.98"
+                            stroke="currentColor"
+                            stroke-width="2"
+                        />
+                    </svg>
+                    공유하기
+                </button>
+            </div>
+
+            <section class="other-business">
+                <div class="container1">
+                    <h2 class="section-title1">
+                        포그몰과 함께하는 다양한 비즈니스
+                    </h2>
+                </div>
+                <div class="business-grid">
+                    <div class="business-card pointground">
+                        <h3>
+                            <img src="images/mall.png" alt="" />
+                        </h3>
+                        <p>
+                            포인트그라운드몰<br />
+                            브랜드/서비스 정보를 확인하세요
+                        </p>
+                        <div class="business-features">
+                            <span>✓ 공식 안내</span>
+                            <span>✓ 서비스 소개</span>
+                            <span>✓ 문의/상담</span>
+                        </div>
+                        <a
+                            href="http://pointground.kr/"
+                            target="_blank"
+                            class="business-link"
+                        >
+                            <button class="btn-business" id="pointground-btn">
+                                자세히 보기
+                            </button>
+                        </a>
+                    </div>
+
+                    <div class="business-card rental">
+                        <h3>
+                            <img
+                                class="small-size"
+                                src="images/rental-logo1.png"
+                                alt=""
+                            />
+                        </h3>
+                        <p>
+                            생활과 사업에 필요한<br />
+                            다양한 렌탈 서비스
+                        </p>
+                        <div class="business-features">
+                            <span>✓ 다양한 상품군</span>
+                            <span>✓ 유연한 계약</span>
+                            <span>✓ 편리한 관리</span>
+                        </div>
+                        <a
+                            href="https://pointground.rental-shop.net/"
+                            target="_blank"
+                            class="business-link"
+                        >
+                            <button class="btn-business">자세히 보기</button>
+                        </a>
+                    </div>
+                    <div class="business-card interior">
+                        <h3>
+                            <img src="images/theteamlogo.png" alt="" />
+                        </h3>
+                        <p>
+                            주거와 상업 공간을 위한<br />
+                            프리미엄 인테리어 솔루션
+                        </p>
+                        <div class="business-features">
+                            <span>✓ 맞춤형 디자인</span>
+                            <span>✓ 합리적인 가격</span>
+                            <span>✓ 원스톱 시공</span>
+                        </div>
+                        <a
+                            href="http://theteamdesign.co.kr/"
+                            target="_blank"
+                            class="business-link"
+                        >
+                            <button class="btn-business">자세히 보기</button>
+                        </a>
+                    </div>
+                    <div class="business-card cafe">
+                        <h3><img src="images/blueseedlogo.png" alt="" /></h3>
+                        <p>
+                            트렌디하고 수익성 높은 카페 브랜드<br />
+                            성공적인 창업의 기회를 제공합니다
+                        </p>
+                        <div class="business-features">
+                            <span>✓ 체계적인 지사운영 시스템</span>
+                            <span>✓ 전문 교육 지원</span>
+                            <span>✓ 마케팅 지원</span>
+                        </div>
+                        <a
+                            href="https://jongyoun3128.github.io/blueseed/"
+                            class="business-link"
+                            target="_blank"
+                        >
+                            <button class="btn-business" id="cafe-btn">
+                                자세히 보기
+                            </button>
+                        </a>
+                    </div>
+                    <div class="business-card zeroking">
+                        <h3>
+                            <img
+                                src="images/zerokinglogo.png"
+                                alt="ZERO KING"
+                            />
+                        </h3>
+                        <p>
+                            누구나 쉽게 운영할 수 있는<br />
+                            완전 자동화 무인 스토어 창업
+                        </p>
+                        <div class="business-features">
+                            <span>✓ 가맹비 0원</span>
+                            <span>✓ 100% 무인 운영</span>
+                            <span>✓ 설비 전체 렌탈</span>
+                        </div>
+                        <a
+                            href="https://jongyoun3128.github.io/zeroking/"
+                            class="business-link"
+                            target="_blank"
+                        >
+                            <button class="btn-business" id="zeroking-btn">
+                                자세히 보기
+                            </button>
+                        </a>
+                    </div>
+                </div>
+            </section>
+            <div class="qr-section" id="qrSection">
+                <h3>
+                    <i class="fas fa-qrcode"></i>
+                    QR 코드로 명함 주문하기
+                </h3>
+                <div class="qr-code-wrapper">
+                    <a
+                        href="http://pointground.kr/shop/shop.php?type=shopdetail&category_code=235006000000000&brandcode=23500600000000000000001&page=1&sort=ICBsb2NhdGlvbiBkZXNjLCB3ZGF0ZSBkZXNjIA==&page_type=shop_catalog.php&pagesize=&word=&part=brandname&product_loc=&brand=&category=&par_code=235006"
+                        target="_blank"
+                        ><img src="images/qr2.png" alt=""
+                    /></a>
+                </div>
+                <p class="qr-description">
+                    QR 코드를 스캔하면<br />
+                    명함을 주문할수 있습니다.
+                </p>
+            </div>
+        </div>
+
+        <!-- 공유 메뉴 모달 -->
+        <div id="shareModal" class="share-modal">
+            <div class="share-modal-content">
+                <div class="share-modal-header">
+                    <h3>공유하기</h3>
+                    <button onclick="closeShareModal()" class="close-btn">
+                        &times;
+                    </button>
+                </div>
+                <div class="share-options">
+                    <button onclick="shareKakao()" class="share-option">
+                        <div class="share-icon kakao-icon">
+                            <svg viewBox="0 0 24 24" fill="currentColor">
+                                <path
+                                    d="M12 3C6.48 3 2 6.58 2 11c0 2.89 1.93 5.44 4.84 6.94-.2.73-.76 2.77-.87 3.21-.13.52.19.51.4.37.16-.11 2.42-1.63 3.53-2.39.69.09 1.41.14 2.14.14 5.52 0 10-3.58 10-8S17.52 3 12 3z"
+                                />
+                            </svg>
+                        </div>
+                        <span>카카오톡</span>
+                    </button>
+                    <button onclick="shareLine()" class="share-option">
+                        <div class="share-icon line-icon">
+                            <svg viewBox="0 0 24 24" fill="currentColor">
+                                <path
+                                    d="M19.365 9.863c.349 0 .63.285.63.631 0 .345-.281.63-.63.63H17.61v1.125h1.755c.349 0 .63.283.63.63 0 .344-.281.629-.63.629h-2.386c-.345 0-.627-.285-.627-.629V8.108c0-.345.282-.63.63-.63h2.386c.346 0 .627.285.627.63 0 .349-.281.63-.63.63H17.61v1.125h1.755zm-3.855 3.016c0 .27-.174.51-.432.596-.064.021-.133.031-.199.031-.211 0-.391-.09-.51-.25l-2.443-3.317v2.94c0 .344-.279.629-.631.629-.346 0-.626-.285-.626-.629V8.108c0-.27.173-.51.43-.595.06-.023.136-.033.194-.033.195 0 .375.104.495.254l2.462 3.33V8.108c0-.345.282-.63.63-.63.345 0 .63.285.63.63v4.771zm-5.741 0c0 .344-.282.629-.631.629-.345 0-.627-.285-.627-.629V8.108c0-.345.282-.63.63-.63.346 0 .628.285.628.63v4.771zm-2.466.629H4.917c-.345 0-.63-.285-.63-.629V8.108c0-.345.285-.63.63-.63.348 0 .63.285.63.63v4.141h1.756c.348 0 .629.283.629.63 0 .344-.282.629-.629.629M24 10.314C24 4.943 18.615.572 12 .572S0 4.943 0 10.314c0 4.811 4.27 8.842 10.035 9.608.391.082.923.258 1.058.59.12.301.079.766.038 1.08l-.164 1.02c-.045.301-.24 1.186 1.049.645 1.291-.539 6.916-4.078 9.436-6.975C23.176 14.393 24 12.458 24 10.314"
+                                />
+                            </svg>
+                        </div>
+                        <span>라인</span>
+                    </button>
+                    <button onclick="shareEmail()" class="share-option">
+                        <div class="share-icon email-icon">
+                            <svg viewBox="0 0 24 24" fill="currentColor">
+                                <path
+                                    d="M20 4H4c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"
+                                />
+                            </svg>
+                        </div>
+                        <span>이메일</span>
+                    </button>
+                    <button onclick="shareSMS()" class="share-option">
+                        <div class="share-icon sms-icon">
+                            <svg viewBox="0 0 24 24" fill="currentColor">
+                                <path
+                                    d="M20 2H4c-1.1 0-2 .9-2 2v18l4-4h14c1.1 0 2-.9 2-2V4c0-1.1-.9-2-2-2zm0 14H6l-2 2V4h16v12z"
+                                />
+                            </svg>
+                        </div>
+                        <span>메시지</span>
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <script src="script.js"></script>
+    </body>
+</html>
